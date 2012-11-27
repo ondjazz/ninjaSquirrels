@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* Grid*/
+
+@media screen and (max-width: 640px) {		body {	font-size: 120%;	} }
+@media screen and (max-width: 480px) {		body {	font-size: 110%;	} }
+@media screen and (max-width: 400px) {		body {	font-size: 100%; 	} }
+@media screen and (max-width: 320px) {		body {	font-size: 90%; 	} }
+@media screen and (max-width: 280px) {		body {	font-size: 80%; 	} }
+@media screen and (max-width: 240px) {		body {	font-size: 70%; 	} }
+
+body { 
+	padding: 0 0.5em; 
+	word-break: break-word;
+	-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+}
+
+.widget:after,
+.gridRow:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+	
+.gridRow, .widget { margin-top: 0.5em;}
+.gridRow:first-child, .widget:first-child { margin-top: 0;}
+.mobileSplit2 { margin-top: 0.5em;}
+.mobileSplit2 .widget { margin-top: 0;}
+.mobileFlat, .mobileFull { margin-top: 0.5em;}
+.mobileFlat:first-child, .mobileFull:first-child { margin-top: 0;}
+
+
+/* Universal style. Mobile Split is the only thing in the mobile space that act like a grid unit. */
+
+.mobileSplit2 > * {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+	padding-left: 0.5em;
+}
+
+.mobileSplit2 {
+	margin-left: -0.5em;	
+}
+
+
+
+
+
+
+
+
+/* Styles for demo purposes */
+
+/* Basic */
+img { width: 100%;}
+h3 { font-family: Droid Serif; }
+p a { color: #00509a;  font-weight: bold; }
+
+/* Big article */
+.mobileFull h3 { font-size: 2.0em; }
+.mobileFull img + h3 { padding-top: 0.2em; }
+.mobileFlat img { float: left; width: 30%; margin-right: 0.5em; max-width: 180px; }
+
+/* Small article */
+.mobileFlat h3 { font-size: 1.3em; }
+.mobileFlat p { display: none; }
+@media screen and (min-width: 480px) { .mobileFlat p { display: block; } }
+
+/* Medium article */
+.mobileSplit2 h3 { font-size: 1.3em; }
+.mobileSplit2 p { display: none; }
+
+/* Padding (for article or row) */
+.padding { background: #ccc; padding: 0.5em; }
+.simpleRedefine { margin-left: -0.5em; margin-right: -0.5em; background: #333; }
+.simpleRedefine h3 { color: #fff; }
+.simpleRedefine a { color: #666; }
