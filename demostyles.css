@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* Demo stuff. Ignore. */
+
+body {
+	font-family: Droid Sans;	
+}
+
+@media screen and (min-width: 641px)  { #viewport { overflow: hidden; } }
+
+@media screen and (min-width: 641px) {
+	#content {
+		margin: 0 auto;	
+		padding: 3em 1em 1em 1em;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#content {
+		padding: 2em 0;
+	}
+}
+
+#content:after {
+	content: "";
+	display: block;
+	position: fixed;
+		left:0; top: 0; right: 0;
+	height: 2em;	
+}
+
+@font-face {
+	font-family: "Droid Sans";
+	font-style: normal;
+	font-weight: bold;
+	src: local("Droid Sans Bold"), local("DroidSans-Bold"), url(http://static.polarismedia.no/skins/prod/publication/adressa/fonts/droidsansbold.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Droid Sans";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Droid Sans"), local("DroidSans"), url(http://static.polarismedia.no/skins/prod/publication/adressa/fonts/droidsansnormal.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Droid Serif";
+	font-style: italic;
+	font-weight: bold;
+	src: local("Droid Serif Bold Italic"), local("DroidSerif-BoldItalic"), url(http://static.polarismedia.no/skins/prod/publication/adressa/fonts/droidserifbolditalic.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Droid Serif";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Droid Serif"), local("DroidSerif"), url(http://static.polarismedia.no/skins/prod/publication/adressa/fonts/droidserifnormal.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Droid Serif";
+	font-style: italic;
+	font-weight: normal;
+	src: local("Droid Serif Italic"), local("DroidSerif-Italic"), url(http://static.polarismedia.no/skins/prod/publication/adressa/fonts/droidserifitalic.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Droid Serif";
+	font-style: normal;
+	font-weight: bold;
+	src: local("Droid Serif Bold"), local("DroidSerif-Bold"), url(http://static.polarismedia.no/skins/prod/publication/adressa/fonts/droidserifbold.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Black";
+	font-style: normal;
+	font-weight: bold;
+	src: url(http://static.polarismedia.no/skins/prod/publication/adressa/fonts/black.woff) format("woff");
+}
+
+
+h1 { background: #000; color: #fff; padding: 1em; border-radius: 0.25em; }
+h1 span { display: block; }
+@media screen and (min-width: 641px) { h1 { margin-top: 1em; } h1 .small { opacity: 0.2; }}
+@media screen and (max-width: 640px) { h1 { margin-top: 0.5em; } h1 .big { opacity: 0.2; } }
+
+h1:first-child { margin-top: 0; }
+
+#content:before {
+	background: #333;	
+	display: block;
+	font-size: 1.5;
+		line-height: 2;
+		color: #fff;
+		text-align: center;
+	position: fixed;
+		left:0.5em; top: 0; right: 0.5em; z-index: 100;
+}
+
+@media screen and (min-width: 641px) {		#content:after { background: red; } }
+@media screen and (min-width: 768px) {		#content:after { background: yellow; } }
+@media screen and (min-width: 820px) {		#content:after { background: gold; } }
+@media screen and (min-width: 900px) {		#content:after { background: pink; } }
+@media screen and (min-width: 1024px) {		#content:after { background: silver; } }
+
+@media screen and (max-width: 640px) {		#content:after { background: cyan; }	}
+@media screen and (max-width: 480px) {		#content:after { background: purple; } img { -webkit-filter: grayscale(20%)} }
+@media screen and (max-width: 400px) {		#content:after { background: orange; } img { -webkit-filter: grayscale(40%)} }
+@media screen and (max-width: 320px) {		#content:after { background: black; } img { -webkit-filter: grayscale(60%)} }
+@media screen and (max-width: 280px) {		#content:after { background: grey; } img { -webkit-filter: grayscale(80%)} }
+@media screen and (max-width: 240px) {		#content:after { background: pink; } img { -webkit-filter: grayscale(100%)} }
+
+@media screen and (min-width: 1px) {		#content:before { content: "Mobile. Fluid and restacked"; }}
+@media screen and (min-width: 768px) {		#content:before { content: "Fluid. 0.8em (smallest unit) is now 12.8px"; } }
+@media screen and (min-width: 820px) {		#content:before { content: "Fixed type. 100% scale. In pixels we're talking 780 here :)"; } }
+@media screen and (min-width: 900px) {		#content:before { content: "Fixed type. 110% scale. Almost 980 now"; } }
+@media screen and (min-width: 1024px) {		#content:before { content: "Bazinga!. 980px grid. 10cols of 80 px. 20px margins and gutters. Max width for main content area."; } }
+
+@media screen and (min-width: 768px) and (max-width: 769px) {	body { background: #000; } }
+@media screen and (min-width: 1024px) and (max-width: 1025px) {	body { background: #000; } }
