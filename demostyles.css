@@ -112,10 +112,77 @@ h1:first-child { margin-top: 0; }
 @media screen and (max-width: 240px) {		#content:after { background: pink; } img { -webkit-filter: grayscale(100%)} }
 
 @media screen and (min-width: 1px) {		#content:before { content: "Mobile. Fluid and restacked"; }}
-@media screen and (min-width: 768px) {		#content:before { content: "Fluid. 0.8em (smallest unit) is now 12.8px"; } }
+@media screen and (min-width: 641px) {		#content:before { content: "Fluid. 0.8em@94% (smallest unit) is now 12px"; } }
+@media screen and (min-width: 768px) {		#content:before { content: "Fixed type. 768. Same typographic scale as the fluid."; } }
 @media screen and (min-width: 820px) {		#content:before { content: "Fixed type. 100% scale. In pixels we're talking 780 here :)"; } }
 @media screen and (min-width: 900px) {		#content:before { content: "Fixed type. 110% scale. Almost 980 now"; } }
 @media screen and (min-width: 1024px) {		#content:before { content: "Bazinga!. 980px grid. 10cols of 80 px. 20px margins and gutters. Max width for main content area."; } }
 
-@media screen and (min-width: 768px) and (max-width: 769px) {	body { background: #000; } }
-@media screen and (min-width: 1024px) and (max-width: 1025px) {	body { background: #000; } }
+@media screen and (min-width: 768px) and (max-width: 769px) {	body { background: #f1f1f1; } }
+@media screen and (min-width: 1024px) and (max-width: 1025px) {	body { background: #f1f1f1; } }
+
+
+
+
+
+
+
+
+/* Styles for demo purposes */
+@media screen and (max-width: 640px)  {
+/* Basic */
+img { width: 100%;}
+h3 { font-family: Droid Serif; }
+p a { color: #00509a;  font-weight: bold; }
+
+/* Big article */
+.mobileFull h3 { font-size: 2.0em; }
+.mobileFull img + h3 { padding-top: 0.2em; }
+.mobileFlat img { float: left; width: 30%; margin-right: 0.5em; max-width: 180px; }
+
+/* Small article */
+.mobileFlat h3 { font-size: 1.3em; }
+.mobileFlat p { display: none; }
+@media screen and (min-width: 480px) { .mobileFlat p { display: block; } }
+
+/* Medium article */
+.mobileSplit2 h3 { font-size: 1.3em; }
+.mobileSplit2 p { display: none; }
+
+/* Padding (for article or row) */
+.padding { background: #ccc; padding: 0.5em; }
+.simpleRedefine { margin-left: -0.5em; margin-right: -0.5em; background: #333; }
+.simpleRedefine h3 { color: #fff; }
+.simpleRedefine a { color: #666; }
+}
+
+@media screen and (min-width: 641px)  {
+/* Simple padding tests */
+.padding { background: #ccc; padding: 1em 0.5em 1em 0.5em; margin-left:0; margin-right: 0; }
+.simpleRedefine { padding: 0.5em 0.25em; background: #333;}
+.simpleRedefine h3 { color: #fff; }
+.simpleRedefine a { color: #666; }
+.simpleRedefine .gridUnit { padding: 0 0.25em; }
+
+
+
+/* Dummy styles for the stories widget */
+.span10 h3 { font-size: 4.7em; }
+.span9 h3 {	font-size: 4.2em; }
+.span8 h3 {	font-size: 3.7em; }
+.span7 h3 {	font-size: 3.2em; }
+.span6 h3 {	font-size: 2.75em; }
+.span5 h3 {	font-size: 2.3em; }
+.span4 h3 {	font-size: 1.8em; }
+.span3 h3 { font-size: 1.3em; }
+.span2 h3 { font-size: 1.2em; }
+.span1 h3 { font-size: 1.2em; }
+.widget img { max-width: 100%; }
+h3 { font-family: Droid Serif; font-weight: normal; }
+p { font-size: 0.8em ; line-height: 1.4; }
+p a { font-weight: bold; color: #00509a; }
+img + h3{ padding-top: 0.1em; }
+
+.span6 .split2 h3 {	font-size: 1.3em; }
+.span4 .split2 h3 {	font-size: 1.2em; }
+}
