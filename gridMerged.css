@@ -7,20 +7,22 @@
 	@-moz-viewport { width: device-width; zoom: 1; }
 	@-ms-viewport { width: device-width; zoom: 1; }
 	@-o-viewport { width: device-width; zoom: 1; }
+	
+body { font-size: 1em; }
 
 /* SMALL GRID */
 
-@media screen and (max-width: 640px) {		body {	font-size: 120%;	} }
-@media screen and (max-width: 480px) {		body {	font-size: 110%;	} }
-@media screen and (max-width: 400px) {		body {	font-size: 100%; 	} }
-@media screen and (max-width: 320px) {		body {	font-size: 90%; 	} }
-@media screen and (max-width: 280px) {		body {	font-size: 80%; 	} }
-@media screen and (max-width: 240px) {		body {	font-size: 70%; 	} }
+@media screen and (max-width: 640px) {		html {	font-size: 120%;	} }
+@media screen and (max-width: 480px) {		html {	font-size: 110%;	} }
+@media screen and (max-width: 400px) {		html {	font-size: 100%; 	} }
+@media screen and (max-width: 320px) {		html {	font-size: 90%; 	} }
+@media screen and (max-width: 280px) {		html {	font-size: 80%; 	} }
+@media screen and (max-width: 240px) {		html {	font-size: 70%; 	} }
 
 @media screen and (min-width: 1px) and (max-width: 640px) {
 
 	body { 
-		padding: 0 0.5em; 
+		padding: 0 0.5rem; 
 		word-break: break-word;
 		-webkit-hyphens: auto;
 			-moz-hyphens: auto;
@@ -28,12 +30,12 @@
 			hyphens: auto;
 	}
 		
-	/* Global spacing between elements */
-	.gridRow, .widget { margin-top: 0.5em;}
+	/* Global spacing between elrements */
+	.gridRow, .widget { margin-top: 0.5rem;}
 	.gridRow:first-child, .widget:first-child { margin-top: 0;}
-	.mobileSplit2 { margin-top: 0.5em;}
+	.mobileSplit2 { margin-top: 0.5rem;}
 	.mobileSplit2 .widget { margin-top: 0;}
-	.mobileFlat, .mobileFull { margin-top: 0.5em;}
+	.mobileFlat, .mobileFull { margin-top: 0.5rem;}
 	.mobileFlat:first-child, .mobileFull:first-child { margin-top: 0;}
 	.widget:after, .gridRow:after { content: ""; display: block; height: 0; clear: both; }
 	
@@ -47,31 +49,31 @@
 			-webkit-box-sizing: border-box;
 			-o-box-sizing: border-box;
 			-ms-box-sizing: border-box;
-		padding-left: 0.5em;
+		padding-left: 0.5rem;
 	}
 	
 	.mobileSplit2 {
-		margin-left: -0.5em;	
+		margin-left: -0.5rem;	
 	}
 
 }
 
 /* BIG GRID */
 
-/* #content { width: 49em; }  784 / 16 = 49em | @125% 980 / 20 = 49em */
+/* #content { width: 61.25rem; }  980 / 16 = 61.25*/
 
-@media screen and (min-width: 641px) {		body {	font-size: 94%;  	} } /* The wasteland that is somewhere in between */
-@media screen and (min-width: 768px) {		body {	font-size: 94%; 	} #content { width: 49em; } } /* Tablet portrait */
-@media screen and (min-width: 820px) {		body {	font-size: 100%; 	} } /* Base all units on this one */
-@media screen and (min-width: 900px) {		body {	font-size: 110%; 	} } /* Needed another breakpoint. 50% snapped window on 1920 display */
-@media screen and (min-width: 1024px) {		body {	font-size: 125%; 	} } /* Tablet landscape and up. Haven't added breakpoints for higher res */
+@media screen and (min-width: 641px) {		html {	font-size: 75.4%;  	} } /* The wasteland that is somewhere in between */
+@media screen and (min-width: 768px) {		html {	font-size: 75.4%; 	} #content { width: 61.25rem; } } /* Tablet portrait */
+@media screen and (min-width: 820px) {		html {	font-size: 80.4%; 	} } /* Base all units on this one */
+@media screen and (min-width: 900px) {		html {	font-size: 88.2%; 	} } /* Needed another breakpoint. 50% snapped window on 1920 display */
+@media screen and (min-width: 1024px) {		html {	font-size: 100%; 	} } /* Tablet landscape and up. Haven't added breakpoints for higher res */
 
 @media screen and (min-width: 641px) {
 
-	/* Global spcaing between elements */
-	.gridRow, .widget { margin-top: 1em;}
+	/* Global spcaing between elrements */
+	.gridRow, .widget { margin-top: 1.25rem;}
 	.gridRow:first-child, .widget:first-child { margin-top: 0;}
-	.gridRow { margin-left: -0.5em; margin-right: -0.5em; }
+	.gridRow { margin-left: -0.625rem; margin-right: -0.625rem; }
 	.gridRow:after { content: ""; display: block; height: 0; clear: both; }
 	
 	/* We can eliminate the use for a gridUnit class with [class*="span"], but might be a performance/comability issue */
@@ -82,8 +84,8 @@
 			-webkit-box-sizing: border-box;
 			-o-box-sizing: border-box;
 			-ms-box-sizing: border-box;
-		padding-right: 0.5em;
-		padding-left: 0.5em;
+		padding-right: 0.625rem;
+		padding-left: 0.625rem;
 	}
 	
 	.span1 { width: 10%; }

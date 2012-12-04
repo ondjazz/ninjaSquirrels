@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* Demo stuff. Ignore. */
+/* Dremo stuff. Ignore. */
 
 body {
 	font-family: Droid Sans;	
@@ -11,7 +11,7 @@ body {
 @media screen and (min-width: 641px) {
 	#content {
 		margin: 0 auto;	
-		padding: 3em 1em 1em 1em;
+		padding: 3rem 1.25rem 1.25rem 1.25rem;
 		box-shadow: 0 0 10px rgba(0,0,0,0.5);
 		background: #fff;
 	}
@@ -21,7 +21,7 @@ body {
 
 @media screen and (max-width: 640px) {
 	#content {
-		padding: 2.5em 0;
+		padding: 2.5rem 0;
 	}
 }
 
@@ -30,7 +30,7 @@ body {
 	display: block;
 	position: fixed;
 		left:0; top: 0; right: 0;
-	height: 2em;	
+	height: 2rem;	
 }
 
 @font-face {
@@ -83,22 +83,21 @@ body {
 }
 
 
-h1 { padding: 0.5em 0; border-bottom: 2px solid #ccc; border-top: 2px solid #ccc; font-size: 1.2em; letter-spacing: -0.05em;}
+h1 { padding: 0.5rem 0; border-bottom: 2px solid #ccc; border-top: 2px solid #ccc; font-size: 1.2rem; letter-spacing: -0.05rem;}
 h1 span { display: block; }
-@media screen and (min-width: 641px) { h1 { margin-top: 1em; } h1 .small { opacity: 0.2; text-decoration: line-through; }}
-@media screen and (max-width: 640px) { h1 { margin-top: 0.5em; } h1 .big { opacity: 0.2; text-decoration: line-through; } }
+@media screen and (min-width: 641px) { h1 { margin-top: 1rem; } h1 .small { opacity: 0.2; text-decoration: line-through; }}
+@media screen and (max-width: 640px) { h1 { margin-top: 0.5rem; } h1 .big { opacity: 0.2; text-decoration: line-through; } }
 
 h1:first-child { margin-top: 0; }
 
 #content:before {
 	background: #333;	
 	display: block;
-	font-size: 1.5;
-		line-height: 2;
+	line-height: 2rem;
 		color: #fff;
 		text-align: center;
 	position: fixed;
-		left:0.5em; top: 0; right: 0.5em; z-index: 100;
+		left:0.5rem; top: 0; right: 0.5rem; z-index: 100;
 }
 
 @media screen and (min-width: 641px) {		#content:after { background: red; } }
@@ -115,7 +114,7 @@ h1:first-child { margin-top: 0; }
 @media screen and (max-width: 240px) {		#content:after { background: pink; } img { -webkit-filter: grayscale(100%)} }
 
 @media screen and (min-width: 1px) {		#content:before { content: "Mobile. Fluid and restacked"; }}
-@media screen and (min-width: 641px) {		#content:before { content: "Fluid. 0.8em@94% (smallest unit) is now 12px"; } }
+@media screen and (min-width: 641px) {		#content:before { content: "Fluid. 1rem@75% (smallest unit) is now 12px"; } }
 @media screen and (min-width: 768px) {		#content:before { content: "Fixed type. 768. Same typographic scale as the fluid."; } }
 @media screen and (min-width: 820px) {		#content:before { content: "Fixed type. 100% scale. In pixels we're talking 780 here :)"; } }
 @media screen and (min-width: 900px) {		#content:before { content: "Fixed type. 110% scale. Almost 980 now"; } }
@@ -131,7 +130,7 @@ h1:first-child { margin-top: 0; }
 
 
 
-/* Styles for demo purposes */
+/* Styles for dremo purposes */
 @media screen and (max-width: 640px)  {
 /* Basic */
 img { width: 100%;}
@@ -139,67 +138,67 @@ h3 { font-family: Droid Serif; }
 p a { color: #00509a;  font-weight: bold; }
 
 /* Big article */
-.mobileFull h3 { font-size: 2.0em; }
-.mobileFull img + h3 { padding-top: 0.2em; }
-.mobileFlat img { float: left; width: 30%; margin-right: 0.5em; max-width: 180px; }
+.mobileFull h3 { font-size: 2.0rem; }
+.mobileFull img + h3 { padding-top: 0.2rem; }
+.mobileFlat img { float: left; width: 30%; margin-right: 0.5rem; max-width: 180px; }
 
 /* Small article */
-.mobileFlat h3 { font-size: 1.3em; }
+.mobileFlat h3 { font-size: 1.3rem; }
 .mobileFlat p { display: none; }
 @media screen and (min-width: 480px) { .mobileFlat p { display: block; } }
 
 /* Medium article */
-.mobileSplit2 h3 { font-size: 1.3em; }
+.mobileSplit2 h3 { font-size: 1.3rem; }
 .mobileSplit2 p { display: none; }
 
 /* Padding (for article or row) */
-.padding { background: #ccc; padding: 0.5em; }
-.simpleRedefine { margin-left: -0.5em; margin-right: -0.5em; background: #333; }
+.padding { background: #ccc; padding: 0.5rem; }
+.simpleRedefine { margin-left: -0.5rem; margin-right: -0.5rem; background: #333; }
 .simpleRedefine h3 { color: #fff; }
 .simpleRedefine a { color: #666; }
 }
 
 @media screen and (min-width: 641px)  {
 /* Simple padding tests */
-.padding { background: #ccc; padding: 1em 0.5em 1em 0.5em; margin-left:0; margin-right: 0; }
-.simpleRedefine { padding: 0.5em 0.25em; background: #333;}
+.padding { background: #ccc; padding: 1.25rem 0.625rem 1.25rem 0.625rem; margin-left:0; margin-right: 0; }
+.simpleRedefine { padding: 0.5rem 0.25rem; background: #333;}
 .simpleRedefine h3 { color: #fff; }
 .simpleRedefine a { color: #666; }
-.simpleRedefine .gridUnit { padding: 0 0.25em; }
+.simpleRedefine .gridUnit { padding: 0 0.25rem; }
 
 
 
 /* Dummy styles for the stories widget */
-.span10 h3 { font-size: 4.7em; }
-.span9 h3 {	font-size: 4.2em; }
-.span8 h3 {	font-size: 3.7em; }
-.span7 h3 {	font-size: 3.2em; }
-.span6 h3 {	font-size: 2.75em; }
-.span5 h3 {	font-size: 2.3em; }
-.span4 h3 {	font-size: 1.8em; }
-.span3 h3 { font-size: 1.3em; }
-.span2 h3 { font-size: 1.2em; }
-.span1 h3 { font-size: 1.2em; }
+.span10 h3 { font-size: 5.0rem; }
+.span9 h3 {	font-size:  4.5rem; }
+.span8 h3 {	font-size:  4.0rem; }
+.span7 h3 {	font-size:  3.5rem; }
+.span6 h3 {	font-size:  3.0rem; }
+.span5 h3 {	font-size:  2.5rem; }
+.span4 h3 {	font-size:  2.0rem; }
+.span3 h3 { font-size:  1.5rem; }
+.span2 h3 { font-size:  1.3rem; }
+.span1 h3 { font-size:  1.3rem; }
 .widget img { max-width: 100%; }
 h3 { font-family: Droid Serif; font-weight: normal; }
-p { font-size: 0.8em ; line-height: 1.4; }
+p { line-height: 1.4; }
 p a { font-weight: bold; color: #00509a; }
-img + h3{ padding-top: 0.1em; }
+img + h3{ padding-top: 0.1rem; }
 
-.span6 .split2 h3 {	font-size: 1.3em; }
-.span4 .split2 h3 {	font-size: 1.2em; }
+.span6 .split2 h3 {	font-size: 1.5rem; }
+.span4 .split2 h3 {	font-size: 1.3rem; }
 }
 
 
 
-.demo { padding: 1em; background: #f1f1f1;} 
-.booya { padding: 1em; background: #333; position: relative;} 
-.mobileFull .booya { height: 11em; }
-@media screen and (min-width: 641px)  { .split2.mobileSplit2 .booya { height: 11em; } }
-.mobileSplit2 .booya { height: 4em; }
-.mobileFlat .booya { height: 4em; }
+.dremo { padding: 1rem; background: #f1f1f1;} 
+.booya { padding: 1rem; background: #333; position: relative;} 
+.mobileFull .booya { height: 11rem; }
+@media screen and (min-width: 641px)  { .split2.mobileSplit2 .booya { height: 11rem; } }
+.mobileSplit2 .booya { height: 4rem; }
+.mobileFlat .booya { height: 4rem; }
 
-.booya:after { background: #000; display: block; font-size: 0.6em; position: absolute; left:0; top:0; padding: 0.5em; color:#fff; font-weight: bold; text-transform: uppercase; }
+.booya:after { background: #000; display: block; font-size: 0.6rem; position: absolute; left:0; top:0; padding: 0.5rem; color:#fff; font-weight: bold; text-transform: uppercase; }
 
 @media screen and (max-width: 640px) {
 .mobileFull .booya:after { content: "Full";}
